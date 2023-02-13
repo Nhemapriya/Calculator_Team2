@@ -1,4 +1,5 @@
-import sysclass Calculator(object) :
+import sys
+class Calculator(object) :
     @staticmethod 
     def main( args) :
         sc =  "Python-inputs"
@@ -19,7 +20,8 @@ import sysclass Calculator(object) :
             print(str(num1) + " % " + str(num2) + " = " + str(Calculator.modulo(num1, num2)))
         elif(operator=='!'):
             print(str(num1) + "! = " + str(Calculator.factorial(num1)))
-    @staticmethod    def  factorial( num1) :
+    @staticmethod    
+    def  factorial( num1) :
         # Write Logic to generate factorial of a number
         return 0
     @staticmethod
@@ -45,6 +47,6 @@ import sysclass Calculator(object) :
     @staticmethod
     def  addition( num1,  num2) :
         # Write Logic to produce the result when we sum two numbers
-        return num1 + num2
-    if __name__=="__main__":
-        Calculator.main(sys.argv)
+        return 0
+if __name__=="__main__":
+    Calculator.main(sys.argv)
